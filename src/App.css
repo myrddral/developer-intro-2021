@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--off-white);
+}
+
+a, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(148, 230, 236)
+}
+
+:root {
+  --off-white: #fafafa;
+  --nice-blue: rgba(43, 187, 228, 0.8 )
+}
+.nav {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+.nav .nav-content {
+  max-width: 900px;
+  padding: 0rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  display: inline;
+  margin-left: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.nav-item:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#scrollToTopButton {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0, 169, 226, 0.8); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopButton:hover {
+  background-color: #555;
+}
+
+.section-dark {
+  background: #333;
+  color: white;
+}
+
+.section-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.section-title {
+  font-size: 18pt;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+#section1 {
+  margin-top: 12vh;
+  height: 80vh;
+  max-width: 800px;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+   -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+       animation: fadein 1s;
+}
+
+.title-wrapper>h1 {
+  font-size: 40pt;
+}
+
+.title-wrapper>p {
+  font-size: 24pt;
+}
+
+.portrait-wrapper {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  /* border: 3px solid rgb(74, 74, 74); */
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgb(250, 248, 248);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#triangle-topleft1 {
+  width: 0;
+  height: 0;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 1;
+  border-top: 40vh solid rgba(0, 189, 210, 0.8);
+  border-right: 60vw solid transparent;
+}
+
+#triangle-topleft2 {
+  width: 0;
+  height: 0;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 1;
+  border-top: 50vh solid rgba(176, 236, 241, 0.8);
+  border-right: 30vw solid transparent;
+}
+
+#triangle-topright1 {
+  width: 0;
+  height: 0;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: 1;
+  border-top: 40vh solid rgba(0, 169, 226, 0.8);
+  border-left: 60vw solid transparent;
+}
+
+.box-content {
+  height: 150px;
+}
+
+.lift-on-hover {
+  transition: 0.5s
+}
+
+/* HOVER ANIMATION */
+.lift-on-hover:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+/* OTHER ANIMATIONS */
+
+
+/* KEYFRAMES */
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
