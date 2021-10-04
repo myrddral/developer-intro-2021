@@ -4,7 +4,7 @@ import "animate.css";
 import Navbar from "./Components/Navbar";
 import TriangleBackground from "./Components/TriangleBackground";
 import Iconlist from "./Components/Iconlist";
-import me from "./attilabeli.png";
+import me from "./assets/attilabeli.png";
 import ContactForm from "./Components/ContactForm";
 import redditThumbnail from "./assets/reddit.png";
 import rideshareThumbnail from "./assets/rideshare.png";
