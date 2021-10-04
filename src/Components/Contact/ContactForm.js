@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { init } from "emailjs-com";
 import emailjs from "emailjs-com";
+// import checkIcon from "../assets/check-solid.svg";
+// import envelopeIcon from "../assets/envelope-solid.svg";
+// import exclamationTriangleIcon from "../assets/exclamation-triangle-solid.svg";
+// import userIcon from "../assets/user-solid.svg";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
