@@ -220,10 +220,6 @@ a:hover {
   border-left: 60vw solid transparent;
 }
 
-.box-content {
-  height: 150px;
-}
-
 .lift-on-hover {
   transition: 0.5s
 }
