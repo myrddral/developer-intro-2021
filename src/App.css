@@ -88,6 +88,10 @@ a:hover {
   z-index: 2;
   max-width: 900px;
   margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.section-content:not(:nth-child(4)) {
   padding: 40px;
 }
 
@@ -110,10 +114,60 @@ a:hover {
 
 .title-wrapper>h1 {
   font-size: 40pt;
+  margin-left: 6vw;
 }
 
 .title-wrapper>p {
-  font-size: 24pt;
+  font-size: 36pt;
+}
+
+.opening-icon {
+  height: 110px
+}
+
+@media screen and (max-width: 650px) {
+  .title-wrapper>h1 {
+    font-size: 36pt;
+    margin-left: 10vw;
+  }
+
+  .title-wrapper>p {
+    font-size: 28pt;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .title-wrapper>p {
+    font-size: 26pt;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav-item {
+    margin-left: 1rem;
+  }
+
+  .title-wrapper>h1 {
+    font-size: 30pt;
+  }
+
+  .title-wrapper>p {
+    font-size: 21pt;
+  }
+  
+  .opening-icon {
+    height: 90px;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  #chevronDown {
+    display: none
+  }
+  .icons {
+    display: none
+  }
 }
 
 .portrait-wrapper {

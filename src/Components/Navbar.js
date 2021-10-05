@@ -26,8 +26,8 @@ const Navbar = () => {
 
   const handleNavbar = () => {
     if (
-      document.body.scrollTop > 0 ||
-      document.documentElement.scrollTop > 0
+      document.body.scrollTop > 1 ||
+      document.documentElement.scrollTop > 1
     ) {
       setNavbarShadow("0 4px 14px 0 rgba(0, 0, 0, 0.15)");
       setIsNavbarBackground("rgba(43, 187, 228, 0.8 )");
