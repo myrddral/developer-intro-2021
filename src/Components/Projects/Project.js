@@ -6,19 +6,28 @@ const Project = (props) => {
   const thumbnail = props.thumbnail;
   const title = props.title;
   const description = props.description;
+  const techUsed = props.techUsed;
   const live = props.live;
   const repo = props.repo;
 
   const handleModalOpen = () => {
-    document.getElementById("root").classList.add("is-clipped");
-    setIsModalActive("is-active")
-  }
+    document.body.style.overflow = "hidden";
+    setIsModalActive("is-active");
+  };
 
   return (
     <>
-      <ProjectModal isActive={isModalActive} setIsActive={setIsModalActive} thumbnail={thumbnail} title={title} description={description}/>
+      <ProjectModal
+        isActive={isModalActive}
+        setIsActive={setIsModalActive}
+        thumbnail={thumbnail}
+        title={title}
+        description={description}
+        techUsed={techUsed}
+      />
       <div className="box p-1 lift-on-hover">
         <div className="box-content">
+          <p style={{ margin: 2 }}>{title}</p>
           <figure className="image">
             <img
               onClick={handleModalOpen}
