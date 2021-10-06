@@ -16,8 +16,9 @@ const ProjectsSection = () => {
             repo={"https://github.com/myrddral/reddit-frontend"}
             title={"Space subReddit Clone (2020)"}
             description={
-              "I did this work during my months at the web dev bootcamp. Tech used: React, CSS (no libraries), Firebase (hosting, auth & noSQL database)"
+              "I did this work during the web dev bootcamp. The goal was to create a website as close to the original as possible. While it wasn't part of the task, I've added a few features: authentication, posting links (currently with OpenGraph metadata only), and commenting."
             }
+            techUsed={"React, CSS (no libraries), Firebase (hosting, auth & noSQL database)"}
           />
         </div>
         <div className="column">
@@ -25,10 +26,11 @@ const ProjectsSection = () => {
             thumbnail={rideshareThumbnail}
             live={"https://rideshare-cb07e.web.app/"}
             repo={"https://github.com/myrddral/rideshare"}
-            title={"RideShare"}
+            title={"RideShare (Work in progress)"}
             description={
-              "My idea for a carpooling community that is based around events. Tech used: React, Ant.Design, Firebase (hosting, auth & noSQL database)"
+              "My idea for a carpooling community that is based around events. I gave a try to Ant.Design framework wich I really enjoyed discovering. It has quiet a lot of features, mainly for enterprise use."
             }
+            techUsed={"React, Ant.Design, Firebase (hosting, auth & noSQL database)"}
           />
         </div>
       </div>
@@ -40,8 +42,9 @@ const ProjectsSection = () => {
             repo={"https://github.com/myrddral/vue-punkapi/tree/master"}
             title={"PunkAPI"}
             description={
-              "This was just a little fun project I made under one day, with 0 knowledge of the framework. Tech used: Vue, Vuetify, Firebase (hosting only)"
+              "This was just a little fun project I made under one day, with 0 knowledge of the framework."
             }
+            techUsed={"Vue, Vuetify, Firebase (hosting only)"}
           />
         </div>
         <div className="column">
@@ -51,8 +54,9 @@ const ProjectsSection = () => {
             repo={"https://github.com/myrddral/quiz-game"}
             title={"Quiz Game"}
             description={
-              "This was made with vanilla JS, no framework. An assignment we did during the bootcamp months. The express backend was made in tandem with the instructor. I will host it in the following days, to be available very shortly."
+              "This was made with vanilla JS, no framework. An assignment we did during the bootcamp. The express backend was made in tandem with the instructor. I will host it in the following days, to be available very shortly."
             }
+            techUsed={"Vanilla JavaScript, Firebase (database only)"}
           />
         </div>
       </div>
