@@ -1,3 +1,5 @@
+import "./modal.css";
+
 const ProjectModal = (props) => {
   const isActive = props.isActive;
   const title = props.title;
@@ -31,13 +33,16 @@ const ProjectModal = (props) => {
             </p>
             <br />
             <div className="columns is-centered">
-              <div className="column is-narrow">
+              <div className="column">
+                <div className="container">
+
                 <img
-                  style={{ borderRadius: 10, paddingBottom: 10, maxWidth: 600 }}
+                  className="modal-image"
                   src={largeImage}
                   alt="project thumbnail"
                 />
-                <section style={{ maxWidth: 600, margin: "auto" }}>
+                </div>
+                <section className="modal-text">
                   <p style={{ textAlign: "justify" }}>
                     <strong>Description: </strong>
                     {description}
