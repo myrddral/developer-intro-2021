@@ -3,7 +3,7 @@ const ProjectModal = (props) => {
   const title = props.title;
   const description = props.description;
   const techUsed = props.techUsed;
-  const thumbnail = props.thumbnail;
+  const largeImage = props.largeImage;
 
   const handleClose = () => {
     document.body.style.overflow = "visible";
@@ -33,11 +33,11 @@ const ProjectModal = (props) => {
             <div className="columns is-centered">
               <div className="column is-narrow">
                 <img
-                  style={{ borderRadius: 10, paddingBottom: 10 }}
-                  src={thumbnail}
+                  style={{ borderRadius: 10, paddingBottom: 10, maxWidth: 600 }}
+                  src={largeImage}
                   alt="project thumbnail"
                 />
-                <section style={{ maxWidth: 440, margin: "auto" }}>
+                <section style={{ maxWidth: 600, margin: "auto" }}>
                   <p style={{ textAlign: "justify" }}>
                     <strong>Description: </strong>
                     {description}

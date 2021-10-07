@@ -1,7 +1,11 @@
 import redditThumbnail from "../../assets/reddit.png";
+import redditLarge from "../../assets/reddit-large.png";
 import rideshareThumbnail from "../../assets/rideshare.png";
+import rideshareLarge from "../../assets/rideshare-large.png";
 import punkapiThumbnail from "../../assets/punkapi.png";
+import punkapiLarge from "../../assets/punkapi-large.png";
 import quizThumbnail from "../../assets/quiz.png";
+import quizLarge from "../../assets/quiz-large.png";
 import Project from "./Project";
 
 const ProjectsSection = () => {
@@ -12,6 +16,7 @@ const ProjectsSection = () => {
         <div className="column">
           <Project
             thumbnail={redditThumbnail}
+            largeImage={redditLarge}
             live={"https://reddit-project-62372.web.app/"}
             repo={"https://github.com/myrddral/reddit-frontend"}
             title={"Space subReddit Clone (2020)"}
@@ -24,6 +29,7 @@ const ProjectsSection = () => {
         <div className="column">
           <Project
             thumbnail={rideshareThumbnail}
+            largeImage={rideshareLarge}
             live={"https://rideshare-cb07e.web.app/"}
             repo={"https://github.com/myrddral/rideshare"}
             title={"RideShare (Work in progress)"}
@@ -38,6 +44,7 @@ const ProjectsSection = () => {
         <div className="column is-half">
           <Project
             thumbnail={punkapiThumbnail}
+            largeImage={punkapiLarge}
             live={"https://punkapi-76d20.web.app/"}
             repo={"https://github.com/myrddral/vue-punkapi/tree/master"}
             title={"PunkAPI"}
@@ -50,6 +57,7 @@ const ProjectsSection = () => {
         <div className="column">
           <Project
             thumbnail={quizThumbnail}
+            largeImage={quizLarge}
             live={"https://alma-groups.com/wp-content/uploads/2020/08/maxresdefault-1.jpg"}
             repo={"https://github.com/myrddral/quiz-game"}
             title={"Quiz Game"}

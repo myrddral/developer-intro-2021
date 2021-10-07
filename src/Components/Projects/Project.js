@@ -4,6 +4,7 @@ import { useState } from "react";
 const Project = (props) => {
   const [isModalActive, setIsModalActive] = useState("");
   const thumbnail = props.thumbnail;
+  const largeImage = props.largeImage;
   const title = props.title;
   const description = props.description;
   const techUsed = props.techUsed;
@@ -20,7 +21,7 @@ const Project = (props) => {
       <ProjectModal
         isActive={isModalActive}
         setIsActive={setIsModalActive}
-        thumbnail={thumbnail}
+        largeImage={largeImage}
         title={title}
         description={description}
         techUsed={techUsed}
