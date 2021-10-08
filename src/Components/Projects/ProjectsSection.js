@@ -34,7 +34,7 @@ const ProjectsSection = () => {
             repo={"https://github.com/myrddral/rideshare"}
             title={"RideShare (Work in progress)"}
             description={
-              "My idea for a carpooling community that is based around events. I gave a try to Ant.Design framework wich I really enjoyed discovering. It has quiet a lot of features, mainly for enterprise use."
+              "My idea for a carpooling community that is based around events. I gave a try to Ant.Design framework wich I really enjoyed discovering. It has quite a lot of features, mainly for enterprise use."
             }
             techUsed={"React, Ant.Design, Firebase (hosting, auth & noSQL database)"}
           />
